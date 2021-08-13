@@ -1,7 +1,14 @@
-<zxing-scanner (scanSuccess)="onCodeResult($event)"></zxing-scanner>
+<zxing-scanner (camerasFound)="cameraFound($event)"
+(camerasNotFound)="camerasNotFound($event)" (scanSuccess)="onCodeResult($event)"></zxing-scanner>
 
-<section class="results" *ngIf="qrResultString">
+<section class="results">
   <div>
+    <small> found result</small>
+    <strong>{{foundresult}}</strong>
+    <hr>
+    <small>Not found result</small>
+    <strong>{{notFoundresult}}</strong>
+    <hr>
     <small>Result</small>
     <strong>{{ qrResultString }}</strong>
   </div>

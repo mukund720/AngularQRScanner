@@ -17,4 +17,17 @@ export class AppComponent {
   onCodeResult(resultString: any) {
     this.qrResultString = resultString;
   }
+  notFoundresult:any='';
+  camerasNotFound(result:any)
+  {
+    this.notFoundresult=result
+    alert('camera not found');
+
+  }
+  foundresult:any=''
+  cameraFound(result:any)
+  {
+    this.foundresult=result;
+  }
+
 }
