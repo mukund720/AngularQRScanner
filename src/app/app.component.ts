@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  qrResultString: any='';
+  scanResult: any='';
 
   title = 'ANGULARQRSCANNER';
 
-
+  onCodeResult(result:string)
+  {
+this.scanResult=result;
+  }
 }
