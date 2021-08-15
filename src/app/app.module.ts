@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WebserviceService } from './services/webservice.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,7 @@ import { WebserviceService } from './services/webservice.service';
     HttpClientModule,
     AppRoutingModule,
   ],
-  providers: [WebserviceService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
